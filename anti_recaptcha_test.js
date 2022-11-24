@@ -7,22 +7,22 @@ var request = require("request");
 var express = require("express");
 var app = express();
 const { body, validationResult } = require("express-validator");
-const Captcha = require("2captcha");
+// const Captcha = require("2captcha");
 
-// ac.setAPIKey('59b38e5ccd9f0d4775783b8a7138235f');
-// ac.getBalance()
-//     .then(balance => console.log('my balance is: '+balance))
-//     .catch(error => console.log('an error with API key: '+error));
+// // ac.setAPIKey('59b38e5ccd9f0d4775783b8a7138235f');
+// // ac.getBalance()
+// //     .then(balance => console.log('my balance is: '+balance))
+// //     .catch(error => console.log('an error with API key: '+error));
 
-const solver = new Captcha.Solver("e8cad69cc5a1e2a4b71697de296f6b75");
-solver
-  .recaptcha(
-    "6LeqRk4cAAAAABZ4SsS_WxYTxazfNfcb0fzY5rc2",
-    "https://www.telkomsel.com/shops/voucher/redeem"
-  )
-  .then((res) => {
-    console.log('2CAPTCHA',res);
-  });
+// const solver = new Captcha.Solver("e8cad69cc5a1e2a4b71697de296f6b75");
+// solver
+//   .recaptcha(
+//     "6LeqRk4cAAAAABZ4SsS_WxYTxazfNfcb0fzY5rc2",
+//     "https://www.telkomsel.com/shops/voucher/redeem"
+//   )
+//   .then((res) => {
+//     console.log('2CAPTCHA',res);
+//   });
 
   
 (async () => {
