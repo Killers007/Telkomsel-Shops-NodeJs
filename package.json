@@ -2,10 +2,10 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "This version of __ is for temporary deployment.",
-  "main": "index.js",
+  "main": "anti_recaptcha_test.js",
   "scripts": {
-      "test": "index.js",
-      "start": "node index.js"
+      "test": "anti_recaptcha_test.js",
+      "start": "node anti_recaptcha_test.js"
   },
   "author": "____",
   "license": "ISC",
