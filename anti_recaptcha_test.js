@@ -2,7 +2,7 @@
 //npm install puppeteer
 
 const ac = require("@antiadmin/anticaptchaofficial");
-const pup = require("puppeteer");
+// const pup = require("puppeteer");
 var request = require("request");
 var express = require("express");
 var app = express();
@@ -36,14 +36,14 @@ solver
     //     return;
     // }
 
-    console.log("opening browser ..");
-    const browser = await pup.launch();
+    // console.log("opening browser ..");
+    // const browser = await pup.launch();
 
-    console.log("creating new tab ..");
-    const tab = await browser.newPage();
+    // console.log("creating new tab ..");
+    // const tab = await browser.newPage();
 
-    console.log("changing window size .. ");
-    await tab.setViewport({ width: 1360, height: 1000 });
+    // console.log("changing window size .. ");
+    // await tab.setViewport({ width: 1360, height: 1000 });
 
     //   console.log("opening target page ..");
     //   await tab.goto("https://www.telkomsel.com/shops/voucher/redeem", {
@@ -79,11 +79,11 @@ solver
     //     tab.waitForNavigation({ waitUntil: "networkidle0" })
     // ]);
 
-    console.log("making a screenshot ...");
-    await tab.screenshot({ path: "screenshot.png" });
+    // console.log("making a screenshot ...");
+    // await tab.screenshot({ path: "screenshot.png" });
 
-    console.log("closing browser .. ");
-    await browser.close();
+    // console.log("closing browser .. ");
+    // await browser.close();
 
     var options = {
       method: "POST",
